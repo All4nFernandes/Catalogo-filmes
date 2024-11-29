@@ -57,8 +57,24 @@ class Filme{
         return $stmt->rowCount() > 0;
 
     }
-    
+
+    public function NovoFilme($titulo,$ano, $descricao){
+        $query = "INSERT INTO $this->tabela (titulo, ano, descricao)
+        VALUES (:titulo, :ano, :descricao)";
+ 
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(":titulo", $titulo);
+        $stmt->bindParam(":ano", $ano);
+        $stmt->bindParam(":descricao", $descricao);
+        $stmt->execute();
+ 
+        // $stmt->setFetchMode(PDO::FETCH_CLASS, __CLASS__);
+ 
+        return $stmt->rowCount() > 0;
+    }
 }
+    
+
 
 //     //
 //     public function findById($id): void{
