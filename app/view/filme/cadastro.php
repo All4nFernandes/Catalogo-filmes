@@ -27,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"]=== "POST"){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Filmes</title>
     <link rel="stylesheet" href="/catalogo-filmes/public/css/style.css">
+    <link rel="stylesheet" href="/catalogo-filmes/public/css/cadastro.css">
 </head>
 <body>
     <h1>Cadastro de filme</h1>
@@ -49,15 +50,15 @@ if ($_SERVER["REQUEST_METHOD"]=== "POST"){
                 save
             </span>
             </button>
-            <!-- Voltar para a listagem -->
-            <form action="visualizar.php" method="GET">
+        </form>
+        <!-- Voltar para a listagem -->
+        <form action="visualizar.php" method="GET">
                 <button type="submit" title= "Voltar">
                 <span class="material-symbols-outlined">
                     arrow_back
                 </span>
                 </button>
             </form>
-        </form>
     </section>
    
 </body>

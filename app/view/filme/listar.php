@@ -71,6 +71,19 @@ $filmes = $filmeModel->buscartodos();
                             </button>
                             <br>
                         </form>
+                        <form action="editar.php">
+                            <input type="hidden" 
+                            name="id" 
+                            name=""
+                            value="<?php echo $filme->id;?>"
+                            >
+                            <button title="editar">
+                                <span>
+                                    Editar
+                                </span>
+                            </button>
+
+                        </form>
                         <form action="excluir.php" method="POST">
                         <input 
                             type="hidden" 

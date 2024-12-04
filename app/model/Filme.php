@@ -72,6 +72,23 @@ class Filme{
  
         return $stmt->rowCount() > 0;
     }
+
+     
+    public function editar($id, $nome,$ano, $descricao){
+        $query = "UPDATE $this->tabela
+                  SET nome = :nome, ano = :ano, descricao = :descricao
+                  WHERE id = :id";
+ 
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(":id", $id);
+        $stmt->bindParam(":nome", $nome);
+        $stmt->bindParam(":ano", $ano);
+        $stmt->bindParam(":descricao", $descricao);
+        $stmt->execute();
+ 
+        return $stmt->rowCount() > 0;
+    }
+ 
 }
     
 
