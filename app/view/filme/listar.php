@@ -21,6 +21,18 @@ $filmes = $filmeModel->buscartodos();
     <link rel="stylesheet" href="/catalogo-filmes/public/css/style.css">
 </head>
 <body>
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a class="logo" href="">MovieVerse</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <li class="active"><a href="listar.php">Editar</a></li>
+                    <li><a href="">Contato  </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 <section class="container">
     
     <h2>Filme</h2>

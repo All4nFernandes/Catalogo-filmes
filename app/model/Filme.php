@@ -59,11 +59,11 @@ class Filme{
     }
 
     public function NovoFilme($titulo,$ano, $descricao){
-        $query = "INSERT INTO $this->tabela (titulo, ano, descricao)
-        VALUES (:titulo, :ano, :descricao)";
+        $query = "INSERT INTO $this->tabela (nome, ano, descricao)
+        VALUES (:nome, :ano, :descricao)";
  
         $stmt = $this->pdo->prepare($query);
-        $stmt->bindParam(":titulo", $titulo);
+        $stmt->bindParam(":nome", $titulo);
         $stmt->bindParam(":ano", $ano);
         $stmt->bindParam(":descricao", $descricao);
         $stmt->execute();

@@ -8,7 +8,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
  
     $sucesso = false;
    
-    if(empty($id)){
+    if(!empty($id)){
             //fluxo para editar
  
             $nome = $_POST["nome"];
@@ -63,7 +63,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     <h1 style="font-size: 35px;">EDITE O FILME</h1>
         <form action="editar.php" method="POST">
         <div>
-                <input type="hidden" name="id" value="<?php echo $id ?>" required>
+                <input type="hidden" name="id" value="<?php echo $filme->id ?>" required>
             </div>
  
             <div>
