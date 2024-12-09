@@ -20,3 +20,20 @@ setTimeout(function(){
     notificacao.remove()
 }, 2000)
 
+
+function Login(){
+    var usuario = document.getElementsByName('username')[0].value;
+    var senha = document.getElementsByName('password')[0].value;
+
+    if(usuario === 'admin' && senha === 'admin'){
+        window.location.href= "http://localhost/catalogo-filmes/app/view/filme/listar.php";
+    }
+    else if(usuario === 'usuario' && senha === '123'){
+        window.location.href = "http://localhost/catalogo-filmes/app/view/filme/home.php";
+    }
+    else{
+        alert('Usuario ou senha incorretos, tente novamente.');
+    }
+
+}
+
