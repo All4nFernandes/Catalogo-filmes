@@ -14,13 +14,9 @@
         <br><br>
         <input class="format" type="password" name="password" placeholder="Senha" required>
         <br><br>
-        <button class="button" type="submit" onclick="Login()">Entrar</button>
-
+        <button class="button" type="button" onclick="Login(event)">Entrar</button>
     </div>
     </form>
     <script src="/catalogo-filmes/public/js/main.js" defer></script>
-
-    
-    
 </body>
 </html>

@@ -21,19 +21,29 @@ setTimeout(function(){
 }, 2000)
 
 
-function Login(){
+function Login(event) {
+    event.preventDefault(); // Previne o envio do formulário
+
     var usuario = document.getElementsByName('username')[0].value;
     var senha = document.getElementsByName('password')[0].value;
 
-    if(usuario === 'admin' && senha === 'admin'){
-        window.location.href= "http://localhost/catalogo-filmes/app/view/filme/listar.php";
-    }
-    else if(usuario === 'usuario' && senha === '123'){
-        window.location.href = "http://localhost/catalogo-filmes/app/view/filme/home.php";
-    }
-    else{
-        alert('Usuario ou senha incorretos, tente novamente.');
+    // Verificar se ambos os campos foram preenchidos
+    if (usuario === "" || senha === "") {
+        alert("Por favor, preencha todos os campos.");
+        return; // Não prosseguir caso os campos estejam vazios
     }
 
+    // Verificação das credenciais
+    if (usuario === 'admin' && senha === 'admin') {
+        alert("Indo para listar");
+        window.location.href = "http://localhost/catalogo-filmes/app/view/filme/listar.php";
+    }
+    else if (usuario === 'usuario' && senha === '123') {
+        window.location.href = "http://localhost/catalogo-filmes/app/view/filme/home.php";
+    }
+    else {
+        alert('Usuário ou senha incorretos, tente novamente.');
+    }
 }
+
 

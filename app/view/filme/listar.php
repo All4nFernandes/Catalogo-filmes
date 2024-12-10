@@ -49,6 +49,7 @@ $filmes = $filmeModel->buscartodos();
     <table class="table">
         <thead>
             <th>ID</th>
+            <th>Capa</th>
             <th>Nome</th>
             <th>Ano</th>
             <th>Descrição</th>
@@ -62,6 +63,7 @@ $filmes = $filmeModel->buscartodos();
                 ?>
                 <tr>
                     <td><?php echo $filme->id?></td>
+                    <td> <img src="<?php echo $filme->url_imagem; ?>" alt="<?php $filme->nome;?>"></td>
                     <td><?php echo $filme->nome?></td>
                     <td><?php echo $filme->ano?></td>
                     <td><?php echo $filme->descricao?></td>

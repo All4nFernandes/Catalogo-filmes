@@ -1,3 +1,13 @@
+<?php
+require_once __DIR__. "\..\..\model\Filme.php";
+
+$filmeModel = new Filme();
+$filmes = $filmeModel->buscartodos();
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,9 +30,16 @@
         </div>
     </header>
     <section>
+    <?php
+                foreach($filmes as $filme){ ?>
+                <?php 
+
+                ?>
+            
         <div>
-            <a href="/catalogo-filmes/app/view/filme/listar.php"><img src="\catalogo-filmes\assets\Batman_cavalheiro_das_trevas.jpg" alt="Filme imagem"></a>
+            <a href="/catalogo-filmes/app/view/filme/visualizar.php" value="<?php echo $filme->id;?>"><img src="<?php echo $filme->url_imagem?>" alt="Filme imagem"></a>
         </div>
     </section>
+    <?php } ?>
 </body>
 </html>
