@@ -63,7 +63,7 @@ $filmes = $filmeModel->buscartodos();
                 ?>
                 <tr>
                     <td><?php echo $filme->id?></td>
-                    <td> <img src="<?php echo $filme->url_imagem; ?>" alt="<?php $filme->nome;?>"></td>
+                    <td class="imagem"> <img src="<?php echo $filme->url_imagem; ?>" alt="capa do filme"></td>
                     <td><?php echo $filme->nome?></td>
                     <td><?php echo $filme->ano?></td>
                     <td><?php echo $filme->descricao?></td>
@@ -88,13 +88,12 @@ $filmes = $filmeModel->buscartodos();
                         <form action="editar.php">
                             <input type="hidden" 
                             name="id" 
-                            name=""
                             value="<?php echo $filme->id;?>"
                             >
                             <button title="editar">
-                                <span>
-                                    Editar
-                                </span>
+                            <span class="material-symbols-outlined">
+                                edit
+                            </span>
                             </button>
 
                         </form>

@@ -17,6 +17,7 @@ class Filme{
     public $ano;
     public $descricao;
     public $url_imagem;
+    public $url_trailer;
 
     public function __construct(){
         global $pdo;

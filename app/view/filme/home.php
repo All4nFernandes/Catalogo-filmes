@@ -36,8 +36,8 @@ $filmes = $filmeModel->buscartodos();
 
                 ?>
             
-        <div>
-            <a href="/catalogo-filmes/app/view/filme/visualizar.php" value="<?php echo $filme->id;?>"><img src="<?php echo $filme->url_imagem?>" alt="Filme imagem"></a>
+        <div class="imagem">
+        <a href="http://localhost/catalogo-filmes/app/view/filme/visualizar.php?id=<?php echo $filme->id; ?>"><img src="<?php echo $filme->url_imagem?>" alt="Capa filme"></a>
         </div>
     </section>
     <?php } ?>

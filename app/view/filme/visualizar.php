@@ -28,12 +28,22 @@ $filme = $filmeModel->findById($id);
     <link rel="stylesheet" href="/catalogo-filmes/public/css/style.css">
 </head>
 <body>
-    <section class="container">
+<section class="container">
         <h2>Detalhes do Filme</h2>
 
-        <h3>Nome: <?php echo $filme->nome?></h3>
-        <p>Ano: <?php echo $filme->ano?></p>
-        <p>Descrição: <?php echo $filme->descricao?></p>
+        <div class="detalhes-container">
+            <h3><?php echo $filme->nome; ?></h3>
+            <img src="<?php echo $filme->url_imagem; ?>" alt="Capa do filme">
+            <div class="descricao">
+                <p><strong>Ano: </strong> <?php echo $filme->ano; ?></p>
+                <p><strong>Descrição: </strong> <?php echo $filme->descricao; ?></p>
+            </div>
+        </div>
+
+        <div class="trailer">
+            <h3>Trailer do Filme</h3>
+            <iframe src="<?php echo $filme->url_trailer; ?>" allowfullscreen></iframe>
+        </div>
 
         <form action="listar.php" method="GET">
             <button title="Voltar">
@@ -43,6 +53,5 @@ $filme = $filmeModel->findById($id);
             </button>
         </form>
     </section>
-    
 </body>
 </html>
