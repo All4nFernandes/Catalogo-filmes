@@ -22,7 +22,7 @@ setTimeout(function(){
 
 
 function Login(event) {
-    event.preventDefault(); // Previne o envio do formulário
+    event.preventDefault();
 
     var usuario = document.getElementsByName('username')[0].value;
     var senha = document.getElementsByName('password')[0].value;
@@ -35,7 +35,6 @@ function Login(event) {
 
     // Verificação das credenciais
     if (usuario === 'admin' && senha === 'admin') {
-        alert("Indo para listar");
         window.location.href = "http://localhost/catalogo-filmes/app/view/filme/listar.php";
     }
     else if (usuario === 'usuario' && senha === '123') {

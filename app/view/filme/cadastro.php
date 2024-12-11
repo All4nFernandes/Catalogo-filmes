@@ -6,10 +6,12 @@ if ($_SERVER["REQUEST_METHOD"]=== "POST"){
     $titulo = $_POST["titulo"];
     $ano = $_POST["ano"];
     $descricao = $_POST["descricao"];
+    $poster = $_POST["poster"];
+    $trailer = $_POST["trailer"];
  
  
     $filmeModel = new Filme();
-    $sucesso = $filmeModel ->NovoFilme($titulo, $ano, $descricao);
+    $sucesso = $filmeModel ->NovoFilme($titulo, $ano, $descricao, $poster, $trailer);
  
     if($sucesso){
         return header("location: listar.php?mensagem=sucesso");
@@ -30,6 +32,19 @@ if ($_SERVER["REQUEST_METHOD"]=== "POST"){
     <link rel="stylesheet" href="/catalogo-filmes/public/css/cadastro.css">
 </head>
 <body>
+<header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a class="logo " href="">MovieVerse</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <li class="active"><a href="cadastro.php">Cadastro</a></li>
+                    <li><a href="listar.php">Listar</a></li>
+                    <li><a href="">Contato  </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <h1>Cadastro de filme</h1>
     <section class="adicionar_filmes">
         <form action="cadastrar.php" method="POST">
@@ -43,7 +58,15 @@ if ($_SERVER["REQUEST_METHOD"]=== "POST"){
             </div>
             <div>
                 <label for="descricao">Descrição</label><br>
-                <input id="tamanho_descricao" type="text" name="descricao" required>
+                <input type="text" name="descricao" required>
+            </div>
+            <div>
+                <label for="url_imagem">Poster Url</label><br>
+                <input type="text" name="url_imagem" required>
+            </div>
+            <div>
+                <label for="url_trailer">Trailer Url</label><br>
+                <input type="text" name="url_trailer" required>
             </div>
             <button>
             <span class="material-symbols-outlined">

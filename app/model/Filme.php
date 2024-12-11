@@ -60,14 +60,16 @@ class Filme{
 
     }
 
-    public function NovoFilme($titulo,$ano, $descricao){
-        $query = "INSERT INTO $this->tabela (nome, ano, descricao)
-        VALUES (:nome, :ano, :descricao)";
+    public function NovoFilme($titulo,$ano, $descricao, $url_imagem, $url_trailer){
+        $query = "INSERT INTO $this->tabela (nome, ano, descricao, url_imagem, url_trailer)
+        VALUES (:nome, :ano, :descricao, :url_imagem, :url_trailer)";
  
         $stmt = $this->pdo->prepare($query);
         $stmt->bindParam(":nome", $titulo);
         $stmt->bindParam(":ano", $ano);
         $stmt->bindParam(":descricao", $descricao);
+        $stmt->bindParam(":url_imagem", $url_imagem,);
+        $stmt->bindParam("", $url_trailer);
         $stmt->execute();
  
         // $stmt->setFetchMode(PDO::FETCH_CLASS, __CLASS__);

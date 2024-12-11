@@ -22,8 +22,9 @@ $filmes = $filmeModel->buscartodos();
             <nav>
                 <ul>
                     <li><a class="logo " href="">MovieVerse</a></li>
-                    <li class="active"><a href="home.php">Home</a></li>
-                    <li><a href="listar.php">Editar</a></li>
+                    <li  class="active"><a href="home.php">Home</a></li>
+                    <li><a href="cadastro.php">Cadastro</a></li>
+                    <li><a href="listar.php">Listar</a></li>
                     <li><a href="">Contato  </a></li>
                 </ul>
             </nav>

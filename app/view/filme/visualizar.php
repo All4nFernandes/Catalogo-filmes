@@ -29,7 +29,7 @@ $filme = $filmeModel->findById($id);
 </head>
 <body>
 <section class="container">
-        <h2>Detalhes do Filme</h2>
+        <h2>Detalhes</h2>
 
         <div class="detalhes-container">
             <h3><?php echo $filme->nome; ?></h3>
@@ -41,7 +41,7 @@ $filme = $filmeModel->findById($id);
         </div>
 
         <div class="trailer">
-            <h3>Trailer do Filme</h3>
+            <h3>Trailer</h3>
             <iframe src="<?php echo $filme->url_trailer; ?>" allowfullscreen></iframe>
         </div>
 
