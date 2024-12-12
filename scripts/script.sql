@@ -5,5 +5,6 @@ create table filme (
     nome varchar(255) not null,
     ano int,
     descricao text,
-    url_imagem longtext
+    url_imagem longtext,
+    url_trailer longtext
 );

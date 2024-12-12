@@ -3,7 +3,6 @@
 @import url('/Catalogo-filmes/public/css/style.css');
 
 
-/* Carrossel */
 section {
     padding: 20px;
     background-color: #fff;
@@ -14,7 +13,7 @@ section {
     overflow: hidden;
 }
 
-section .carousel {
+section .carrossel {
     display: flex;
     gap: 15px;
     overflow-x: auto;
@@ -22,9 +21,6 @@ section .carousel {
     padding-bottom: 10px;
 }
 
-section .carousel::-webkit-scrollbar {
-    display: none;
-}
 
 section .imagem {
     flex: 0 0 auto;
@@ -104,11 +100,7 @@ h1 {
     color: #555;
 }
 
-.material-symbols-outlined {
-    vertical-align: middle;
-}
 
-/* Carrossel */
 section {
     padding: 20px;
     background-color: #fff;
@@ -119,16 +111,12 @@ section {
     overflow: hidden;
 }
 
-section .carousel {
+section .carrossel{
     display: flex;
     gap: 15px;
     overflow-x: auto;
     scroll-behavior: smooth;
     padding-bottom: 10px;
-}
-
-section .carousel::-webkit-scrollbar {
-    display: none;
 }
 
 section .imagem {

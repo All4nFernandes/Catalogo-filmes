@@ -101,11 +101,11 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         </form>
             <!-- Voltar para a listagem -->
         <form action="visualizar.php" method="GET">
-                <button id="icone" type="submit" title= "Voltar">
-                <span class="material-symbols-outlined">
-                arrow_right_alt
+               <button>
+               <span class="material-symbols-outlined">
+                    arrow_back
                 </span>
-                </button>
+               </button>
             </form>
  
     </section>

@@ -32,7 +32,7 @@ $filmes = $filmeModel->buscartodos();
 </header>
 
 <section>
-    <div class="carousel">
+    <div class="carrossel">
         <?php foreach ($filmes as $filme) { ?>
             <div class="imagem">
                 <a href="http://localhost/catalogo-filmes/app/view/filme/visualizar.php?id=<?php echo $filme->id; ?>">

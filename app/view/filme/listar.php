@@ -1,11 +1,4 @@
 <?php
-
-
-
-// printa formatado no navegador
-// echo"<pre>";
-//print_r(); 
-// echo"</pre>";
 require_once __DIR__. "\..\..\model\Filme.php";
 
 $filmeModel = new Filme();

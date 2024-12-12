@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 @import url('/Catalogo-filmes/public/css/style.css');
 
 .adicionar_filmes {
@@ -39,8 +41,6 @@
     background-color: #555;
 }
 
-.material-symbols-outlined {
-    vertical-align: middle;
+h1{
+    text-align: center;
 }
-
-
