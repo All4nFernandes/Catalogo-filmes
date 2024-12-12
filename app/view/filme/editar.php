@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
             $ano = $_POST["ano"];
             $descricao = $_POST["descricao"];
  
-            $sucesso = $filmeModel->NovoFilme($nome, $ano, $descricao);
+            $sucesso = $filmeModel->NovoFilme($nome, $ano, $descricao, $url_imagem, $url_trailer);
     }
    
     if($sucesso){
