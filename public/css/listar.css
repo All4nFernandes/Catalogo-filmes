@@ -1,0 +1,138 @@
+@import url("/Catalogo-filmes/public/css/style.css");
+
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.acao {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.acao a button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.acao a button:hover {
+    background-color: #00bcd4;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table thead th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.table tbody td.imagem img {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table tbody td button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.table tbody td button:hover {
+    color: #00bcd4;
+}
+
+.botao {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.botao:hover {
+    background-color: #555;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+
+/* Carrossel */
+section {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 90%;
+    overflow: hidden;
+}
+
+section .carousel {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+section .carousel::-webkit-scrollbar {
+    display: none;
+}
+
+section .imagem {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section .imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

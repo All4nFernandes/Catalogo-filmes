@@ -18,7 +18,7 @@ $filmes = $filmeModel->buscartodos();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmes</title>
-    <link rel="stylesheet" href="/catalogo-filmes/public/css/style.css">
+    <link rel="stylesheet" href="/catalogo-filmes/public/css/listar.css">
 </head>
 <body>
 <header>

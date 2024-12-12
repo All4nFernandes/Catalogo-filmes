@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 
+
 :root{
     --cor-sucesso: #4caf50;
     --cor-erro: #ff4d4d;
@@ -15,43 +16,53 @@ body{
     
 }
 
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center ;
-    height: 8vh;
-
+/* Navbar Unificada */
+header {
+    background-color: #333; /* Cor de fundo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Fixa a barra no topo */
+    top: 0;
+    z-index: 1000;
 }
 
-ul {
-    list-style-type: none;
+nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    gap: 30px;
-    letter-spacing: 1px;
-  }
-  
-  li {
-    float:left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
     text-decoration: none;
-    border-right: 1px solid;
-  }
-  .logo{
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555; 
+}
+
+nav ul li a.active {
+    background-color: #007BFF; 
+    color: #fff;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFD700; /* Cor para o logotipo */
     text-transform: uppercase;
-    letter-spacing: 2px;
-  }
+}
+
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {

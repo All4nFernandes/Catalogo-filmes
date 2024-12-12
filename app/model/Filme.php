@@ -78,9 +78,9 @@ class Filme{
     }
 
      
-    public function editar($id, $nome,$ano, $descricao){
+    public function editar($id, $nome,$ano, $descricao, $url_imagem, $url_trailer){
         $query = "UPDATE $this->tabela
-                  SET nome = :nome, ano = :ano, descricao = :descricao
+                  SET nome = :nome, ano = :ano, descricao = :descricao, url_imagem = :url_imagem, url_trailer = :url_trailer
                   WHERE id = :id";
  
         $stmt = $this->pdo->prepare($query);
@@ -88,6 +88,8 @@ class Filme{
         $stmt->bindParam(":nome", $nome);
         $stmt->bindParam(":ano", $ano);
         $stmt->bindParam(":descricao", $descricao);
+        $stmt->bindParam(":url_imagem", $url_imagem);
+        $stmt->bindParam(":url_trailer", $url_trailer);
         $stmt->execute();
  
         return $stmt->rowCount() > 0;

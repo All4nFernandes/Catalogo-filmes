@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+@import url('/Catalogo-filmes/public/css/style.css');
+
+
+/* Carrossel */
+section {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 90%;
+    overflow: hidden;
+}
+
+section .carousel {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+section .carousel::-webkit-scrollbar {
+    display: none;
+}
+
+section .imagem {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section .imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+.container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container div {
+    margin-bottom: 15px;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.container input[type="text"],
+.container input[type="hidden"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.botao {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.botao:hover {
+    background-color: #555;
+}
+
+#icone {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#icone:hover {
+    color: #555;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+
+/* Carrossel */
+section {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 90%;
+    overflow: hidden;
+}
+
+section .carousel {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+section .carousel::-webkit-scrollbar {
+    display: none;
+}
+
+section .imagem {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section .imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

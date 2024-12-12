@@ -14,14 +14,18 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
             $nome = $_POST["nome"];
             $ano = $_POST["ano"];
             $descricao = $_POST["descricao"];
+            $url_imagem = $_POST["url_imagem"];
+            $url_trailer = $_POST["url_trailer"];
  
-            $sucesso = $filmeModel->editar($id,$nome,$ano,$descricao);
+            $sucesso = $filmeModel->editar($id,$nome,$ano,$descricao, $url_imagem, $url_trailer);
     } else {
  
    
             $nome = $_POST["nome"];
             $ano = $_POST["ano"];
             $descricao = $_POST["descricao"];
+            $url_imagem = $_POST["url_imagem"];
+            $url_trailer = $_POST["url_trailer"];
  
             $sucesso = $filmeModel->NovoFilme($nome, $ano, $descricao, $url_imagem, $url_trailer);
     }
@@ -79,6 +83,16 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
             <div>
             <label for="descricao">Descrição:</label>
                 <input type="text" name="descricao"  value="<?php echo $filme->descricao; ?>" required>
+            </div>
+ 
+            <div>
+            <label for="url_imagem">Poster:</label>
+                <input type="text" name="url_imagem"  value="<?php echo $filme->url_imagem; ?>" required>
+            </div>
+ 
+            <div>
+            <label for="url_trailer">Trailer:</label>
+                <input type="text" name="url_trailer"  value="<?php echo $filme->url_trailer; ?>" required>
             </div>
  
             <button class="botao">
