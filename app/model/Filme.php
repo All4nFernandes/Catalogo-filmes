@@ -69,7 +69,7 @@ class Filme{
         $stmt->bindParam(":ano", $ano);
         $stmt->bindParam(":descricao", $descricao);
         $stmt->bindParam(":url_imagem", $url_imagem,);
-        $stmt->bindParam("", $url_trailer);
+        $stmt->bindParam(":url_trailer", $url_trailer);
         $stmt->execute();
  
         // $stmt->setFetchMode(PDO::FETCH_CLASS, __CLASS__);

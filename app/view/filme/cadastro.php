@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"]=== "POST"){
     </header>
     <h1>Cadastro de filme</h1>
     <section class="adicionar_filmes">
-        <form action="cadastrar.php" method="POST">
+        <form action="cadastro.php" method="POST">
             <div>
                 <label for="titulo">titulo do filme</label><br>
                 <input type="text" name="titulo" required>
@@ -61,12 +61,12 @@ if ($_SERVER["REQUEST_METHOD"]=== "POST"){
                 <input type="text" name="descricao" required>
             </div>
             <div>
-                <label for="url_imagem">Poster Url</label><br>
-                <input type="text" name="url_imagem" required>
+                <label for="poster">Poster Url</label><br>
+                <input type="text" name="poster" required>
             </div>
             <div>
-                <label for="url_trailer">Trailer Url</label><br>
-                <input type="text" name="url_trailer" required>
+                <label for="trailer">Trailer Url</label><br>
+                <input type="text" name="trailer" required>
             </div>
             <button>
             <span class="material-symbols-outlined">
